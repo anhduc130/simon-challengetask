@@ -145,8 +145,10 @@ KEYS.forEach(function (key) {
 });
 
 // Initialize the game
-addRandomKey();
-playKeysArray();
+setTimeout(function(){
+	addRandomKey();
+	playKeysArray();
+},1500);
 
 /*KEYS.concat(KEYS.slice().reverse()).forEach(function(key, i) {
 	setTimeout(notes[key].play.bind(null, key), i * NOTE_DURATION);
